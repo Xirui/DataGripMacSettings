@@ -1,5 +1,6 @@
 <application>
-  <component name="DatabaseSettings" version="4">
+  <component name="DatabaseSettings" version="7">
+    <option name="warn-unsafe-query" value="false" />
     <option name="ddl-editor-confirm-loss" value="false" />
     <text-mode>
       <parameter-patterns>
@@ -13,7 +14,7 @@
       </parameter-patterns>
     </text-mode>
     <csv-formats>
-      <csv-format name="Tab-separated (TSV)" id="079c04ba-18d0-4e24-b507-e00479357377">
+      <csv-format name="TSV" id="079c04ba-18d0-4e24-b507-e00479357377">
         <data>
           <record-format prefix="" suffix="" nullText="" quotationPolicy="always" valueSeparator="," recordSeparator="&#10;">
             <quotation>
@@ -34,6 +35,16 @@
       <csv-format name="PythonList" id="Tab-separated (TSV)_id">
         <data>
           <record-format prefix="&quot;" suffix="&quot;" nullText="" quotationPolicy="always" valueSeparator="&#9;" recordSeparator="," />
+        </data>
+      </csv-format>
+      <csv-format name="Pipe-separated" id="Pipe-separated_id">
+        <data>
+          <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator="|" recordSeparator="&#10;">
+            <quotation>
+              <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
+              <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
+            </quotation>
+          </record-format>
         </data>
       </csv-format>
     </csv-formats>
